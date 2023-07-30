@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 120vh;
+}
+
+.navsec a {
+    width: auto;
+    padding: 1.5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.navsec a:hover {
+    background-color: red;
+}
+
+.pagelink {
+    background-color: red;
+}
+
+.cari {
+    background: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)), url("images/home-bg.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+    transition-duration: 1s;
+}
+
+.button {
+    border: 2px solid rgb(219, 80, 80);
+    padding: 0.4rem 2rem;
+    font-size: 14px;
+    /* transition: 0.5s; */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    border: 2px solid rgb(219, 80, 80);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 95%;
+    height: 100%;
+    background: rgb(219, 80, 80);
+    z-index: -1;
+    transform: skewX(50deg) scaleX(0);
+    transition: 0.2s;
+}
+
+.button:hover::before {
+    transform: skewX(50deg) scaleX(1);
+}
+
+.button:hover {
+    color: white !important;
+}
+
+
+/* Swiper Slider */
+
+.swiper-wrapper {
+    text-align: center;
+    background: #fff;
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    min-width: 250px !important;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 1s;
+}
+
+.swiper-slide p {
+    font-size: 13px;
+    padding: 0 1rem;
+}
+
+.swiper-slide h4 {
+    padding-top: 1.5rem;
+    text-transform: uppercase;
+}
+
+.swiper-slide h4 a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.swiper-slide:hover {
+    cursor: pointer;
+}
+
+.swiper-slide:hover h4 a {
+    color: rgb(219, 80, 80);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* -------------------About page----------------------- */
+
+.abouth {
+    background: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)), url("images/about-header-bg.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/*--------------------technologies page--------------------------*/
+
+.pagination .page-item .page-link {
+    background-color: rgb(66, 66, 66) !important;
+    color: white;
+    border-color: black;
+}
+
+.pagination .page-item :hover {
+    background-color: red !important;
+}
+
+
+/* 
+blog */
+
+.ht {
+    color: black;
+}
+
+.ht :hover {
+    color: red !important;
+    text-decoration: none;
+}
+
+.hh1 {
+    color: #A0A0A0;
+}
+
+.hh1 a:link {
+    color: #A0A0A0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hf :hover {
+    color: red !important;
+    text-decoration: none;
+}
+
+.ads {
+    background-color: #ffffff;
+}
+
+.ads:hover {
+    background-color: #eeecec;
+}
+
+.tags_container button {
+    background-color: rgb(53, 52, 52);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 12px;
+}
+
+.tags_container button:hover {
+    background-color: rgb(219, 80, 80);
+    transition: all 0.5s;
+}
